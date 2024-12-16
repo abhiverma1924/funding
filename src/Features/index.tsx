@@ -89,7 +89,7 @@ export default function ProjectTable() {
           onClick={prevPage}
           disabled={currentPage === 1}
           variant="contained"
-          color="primary"
+          sx={{ backgroundColor: "#004CE5", "&:hover": { backgroundColor: "#003BB5" } }}
           size="large"
         >
           Previous
@@ -102,6 +102,7 @@ export default function ProjectTable() {
           disabled={currentPage === totalPages}
           variant="contained"
           color="primary"
+          sx={{ backgroundColor: "#004CE5", "&:hover": { backgroundColor: "#003BB5" } }}
           size="large"
         >
           Next

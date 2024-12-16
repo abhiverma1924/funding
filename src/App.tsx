@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import { QueryClient, QueryClientProvider } from 'react-query'
@@ -37,7 +36,7 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppBar position="static">
+        <AppBar position="static"  sx={{ backgroundColor: "#004CE5", "&:hover": { backgroundColor: "#003BB5" } }}>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Project Funding Dashboard
